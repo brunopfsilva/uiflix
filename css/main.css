@@ -10,12 +10,15 @@ header .container .logo{
     font-weight: 500;
     font-kerning: 10px;
     color: var(--txtlogo);
+    padding-left: 1rem;
+
 }
 
 header .container {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    justify-content: space-between;
 }
 
 * {
@@ -38,4 +41,9 @@ header .menu a {
     padding-top: 11px;
     text-decoration: none;
     color: var(--txtcolor);
+    margin-right: 1rem;
+}
+
+header .menu a:hover{
+    color: white;
 }
