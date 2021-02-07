@@ -3,6 +3,9 @@
     --preto: #141414;
     --txtcolor: #ddd;
     --txtlogo:  rgb(162, 10, 233);
+    --margemdireita: margin-right: 1rem;
+    --margemesquerda: margin-left: 1rem;
+
 }
 
 header .container .logo{
@@ -26,24 +29,54 @@ header .container {
     padding: 0;
     box-sizing: border-box;
 }
+/* base  */
 
 body {
     background: var(--preto);
+    padding-top: 0.6rem;
+    padding-right: var(--margemdireita);
+    padding-left: var(--margemesquerda);
+    color: var(--txtcolor);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .menu {
     padding-top: 0.6rem;
+    padding-right: 1rem;
 }
+
 
 header .menu a {
     font-size: large;
     padding-top: 11px;
     text-decoration: none;
     color: var(--txtcolor);
-    margin-right: 1rem;
 }
 
 header .menu a:hover{
     color: white;
+}
+
+
+.descricao {
+    padding-left: 1rem;
+}
+
+.titulo {
+    padding: 1rem;
+}
+
+
+
+/* principal  */
+
+
+.filmes-principal {
+    padding: 2rem;
+    font-size: 1rem;
+    font-kerning: 1rem;
+    background: linear-gradient(rgba(0,0,0,.50), #141414)100%, url('/img/star\ wars.jpg');
+    height: 450px;
+    background-size: contain;
+    
 }
