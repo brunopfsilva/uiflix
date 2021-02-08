@@ -5,6 +5,7 @@
     --txtlogo:  rgb(162, 10, 233);
     --margemdireita: margin-right: 1rem;
     --margemesquerda: margin-left: 1rem;
+    --cortransparente:  rgba(0,0,0,.50);
 
 }
 
@@ -58,13 +59,6 @@ header .menu a:hover{
 }
 
 
-.descricao {
-    padding-left: 1rem;
-}
-
-.titulo {
-    padding: 1rem;
-}
 
 
 
@@ -72,11 +66,45 @@ header .menu a:hover{
 
 
 .filmes-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 2rem;
+    align-items: flex-start;
     font-size: 1rem;
     font-kerning: 1rem;
     background: linear-gradient(rgba(0,0,0,.50), #141414)100%, url('/img/star\ wars.jpg');
     height: 450px;
-    background-size: contain;
-    
+    background-size: contain;  
+    transition: .3s ease all; 
+}
+
+.filmes-principal .descricao {
+    margin-bottom: 10px;
+    margin-bottom: 45px;
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: var(--txtcolor);
+    padding: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+}
+
+.botao:hover {
+   background-color: var(--txtcolor);
+   color: var(--preto);
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+.filmes-principal  .container {
+    margin-left: 10px;
+    width: 60%;
 }
