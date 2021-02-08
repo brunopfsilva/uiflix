@@ -70,7 +70,7 @@ header .menu a:hover{
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    align-items: flex-start;
+    align-items: center;
     font-size: 1rem;
     font-kerning: 1rem;
     background: linear-gradient(rgba(0,0,0,.50), #141414)100%, url('/img/star\ wars.jpg');
@@ -107,4 +107,14 @@ header .menu a:hover{
 .filmes-principal  .container {
     margin-left: 10px;
     width: 60%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
 }
